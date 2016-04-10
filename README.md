@@ -12,6 +12,7 @@ Open /index.html in your browser and have fun!
 ### Development Environment
 The development environment uses Node.js to execute tooling: development server,
 transpiling, linting, unit testing, and, building.
+
 1. install [Node.js](https://nodejs.org/en/download/).
 
 1. Install dependency packages and start the development server.
