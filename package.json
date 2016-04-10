@@ -4,9 +4,9 @@
   "description": "a simple number guessing game",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
-    "build" : "webpack -p",
-    "test": "test"
+    "build": "npm run test && webpack",
+    "start": "webpack-dev-server --hot --inline",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,38 @@
     "url": "https://github.com/ppalladino/guess-the-number/issues"
   },
   "homepage": "https://github.com/ppalladino/guess-the-number#readme",
+  "jest": {
+    "testDirectoryName": "src",
+    "testFileExtensions": [
+      "spec.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.7.4",
+    "babel-jest": "^10.0.1",
     "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^4.3.0",
+    "jest-cli": "^0.10.0",
+    "lodash": "^4.9.0",
+    "material-ui": "^0.14.4",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
+    "react-tap-event-plugin": "^0.2.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }
