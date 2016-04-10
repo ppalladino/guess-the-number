@@ -34,7 +34,7 @@ npm run build
 ### Linting
 Uses the [airbnb eslint config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 ```sh
-npm run linter
+npm run lint
 ```
 
 ### Unit tests
